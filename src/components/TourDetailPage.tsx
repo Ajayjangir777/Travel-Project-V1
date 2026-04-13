@@ -208,7 +208,7 @@ const TourDetailPage = () => {
                   Call Now
                 </a>
                 <Link
-                  to="/contact"
+                  to="/contact-us"
                   className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center text-sm sm:text-base"
                 >
                   Send Enquiry
