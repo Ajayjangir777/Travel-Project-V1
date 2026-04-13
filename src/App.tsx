@@ -17,6 +17,9 @@ import AboutUs from './components/AboutUs'
 import ContactUs from './components/ContactUs'
 import PrivacyPolicy from './components/PrivacyPolicy'
 
+import tour2days from "./assets/jaipur-2days-tour.png";
+import goldenTourVaranasi from "./assets/golden-tour-varanasi.png";
+
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -104,7 +107,7 @@ const rajasthanTours = [
     duration: "5 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=400&h=300&fit=crop",
+    image: tour2days,
     featured: false
   },
   {
@@ -152,7 +155,7 @@ const goldenTriangleTours = [
     duration: "7 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400&h=300&fit=crop",
+    image: goldenTourVaranasi,
     featured: false
   },
   {
@@ -200,7 +203,7 @@ const jaipurTours = [
     duration: "2 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1574236170880-ffd41edaf5f9?w=400&h=300&fit=crop",
+    image: tour2days,
     featured: false
   },
   {

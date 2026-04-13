@@ -1,3 +1,8 @@
+import tour2days from "../assets/jaipur-2days-tour.png";
+import goldenTourVaranasi from "../assets/golden-tour-varanasi.png";
+import udaipurNathDwaraTour from "../assets/udaipurNathdwaraTour.png";
+import khajuraoTour from "../assets/khajuraoTour.png";
+
 export interface Tour {
   id: number
   title: string
@@ -98,7 +103,7 @@ export const allTours: Tour[] = [
     duration: "9 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop",
+    image: khajuraoTour,
     featured: false,
     category: "Golden Triangle Tours"
   },
@@ -108,7 +113,7 @@ export const allTours: Tour[] = [
     duration: "7 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=400&h=300&fit=crop",
+    image: goldenTourVaranasi,
     featured: false,
     category: "Golden Triangle Tours"
   },
@@ -180,7 +185,7 @@ export const allTours: Tour[] = [
     duration: "1 day",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1574236170880-ffd41edaf5f9?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=400&h=300&fit=crop",
     featured: false,
     category: "Jaipur Tours"
   },
@@ -190,7 +195,7 @@ export const allTours: Tour[] = [
     duration: "2 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=400&h=300&fit=crop",
+    image: tour2days,
     featured: false,
     category: "Jaipur Tours"
   },
@@ -313,7 +318,7 @@ export const allTours: Tour[] = [
     duration: "2 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1585136917803-76c2c21c44c3?w=400&h=300&fit=crop",
+    image: udaipurNathDwaraTour,
     featured: false,
     category: "Rajasthan Tours"
   },
