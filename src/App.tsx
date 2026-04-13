@@ -51,7 +51,7 @@ const HomePage = () => {
         tours={jaipurTours}
       />
       <BestSelling />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Testimonials />
       <Partners />
     </>

@@ -53,7 +53,7 @@ const ToursPage = ({ category }: ToursPageProps) => {
             Looking for a customized tour package? We offer personalized tours tailored to your preferences.
           </p>
           <Link
-            to="/contact"
+            to="/contact-us"
             className="inline-block bg-white text-primary px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base"
           >
             ENQUIRE NOW
