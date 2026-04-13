@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="globeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="50%" stop-color="#00B4D8" />
+      <stop offset="100%" stop-color="#0077B6" />
+    </linearGradient>
+    <linearGradient id="planeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD93D" />
+      <stop offset="100%" stop-color="#FF9500" />
+    </linearGradient>
+    <linearGradient id="trailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0" />
+      <stop offset="100%" stop-color="#FF6B6B" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Globe -->
+  <circle cx="50" cy="52" r="32" fill="url(#globeGrad)" />
+  <ellipse cx="50" cy="52" rx="32" ry="12" fill="none" stroke="#FFF" stroke-width="1.5" opacity="0.5" />
+  <ellipse cx="50" cy="52" rx="15" ry="32" fill="none" stroke="#FFF" stroke-width="1.5" opacity="0.5" />
+  <line x1="18" y1="52" x2="82" y2="52" stroke="#FFF" stroke-width="1.5" opacity="0.5" />
+  
+  <!-- Continents hint -->
+  <ellipse cx="38" cy="45" rx="8" ry="6" fill="#48CAE4" opacity="0.6" />
+  <ellipse cx="60" cy="55" rx="10" ry="7" fill="#48CAE4" opacity="0.6" />
+  <ellipse cx="45" cy="65" rx="6" ry="4" fill="#48CAE4" opacity="0.6" />
+  
+  <!-- Airplane -->
+  <g transform="translate(15, 15) rotate(-25, 35, 35)">
+    <path d="M55 30 L70 25 L72 28 L60 35 L65 45 L62 46 L55 38 L45 42 L44 40 L52 35 L45 30 L46 28 Z" fill="url(#planeGrad)" />
+  </g>
+  
+  <!-- Flight trail -->
+  <path d="M10 25 Q25 30 35 22" stroke="url(#trailGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 4" />
+  
+  <!-- Sparkles -->
+  <circle cx="85" cy="25" r="3" fill="#FFD93D" opacity="0.9" />
+  <circle cx="12" cy="70" r="2" fill="#00D9FF" opacity="0.8" />
+  
+  <!-- Small star -->
+  <path d="M78 15 L79 18 L82 18 L80 20 L81 23 L78 21 L75 23 L76 20 L74 18 L77 18 Z" fill="#FFF" opacity="0.9" />
+</svg>
