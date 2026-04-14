@@ -2,6 +2,14 @@ import tour2days from "../assets/jaipur-2days-tour.png";
 import goldenTourVaranasi from "../assets/golden-tour-varanasi.png";
 import udaipurNathDwaraTour from "../assets/udaipurNathdwaraTour.png";
 import khajuraoTour from "../assets/khajuraoTour.png";
+import khatuShyamTour from "../assets/khatu-shyam-tour.png";
+import vaishnoDeviTour from "../assets/vaishno-dev-tour.png";
+import doDhamGangotri from "../assets/do-dham-gangotri.png";
+import jaisalmairTour from "../assets/Jaisalmer-tour.png";
+import karniMataTemple from "../assets/karni-mata-temple.png";
+import charDhamYatra from "../assets/char-dham-yatra.png";
+import spitiValleyTour from "../assets/Spiti-Valley.png";
+import vrindaVanTour from "../assets/vrindavan.png";
 
 export interface Tour {
   id: number
@@ -226,7 +234,7 @@ export const allTours: Tour[] = [
     duration: "12 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    image: charDhamYatra,
     featured: false,
     category: "North India Tours"
   },
@@ -256,7 +264,7 @@ export const allTours: Tour[] = [
     duration: "2 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1622322062536-895d869b09ff?w=400&h=300&fit=crop",
+    image: vrindaVanTour,
     featured: false,
     category: "North India Tours"
   },
@@ -266,7 +274,7 @@ export const allTours: Tour[] = [
     duration: "4 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1593815374272-52a2d4a9e917?w=400&h=300&fit=crop",
+    image: vaishnoDeviTour,
     featured: false,
     category: "North India Tours"
   },
@@ -276,7 +284,7 @@ export const allTours: Tour[] = [
     duration: "5 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1604871000636-074fa5e587a5?w=400&h=300&fit=crop",
+    image: doDhamGangotri,
     featured: false,
     category: "North India Tours"
   },
@@ -287,7 +295,7 @@ export const allTours: Tour[] = [
     duration: "1 day",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1544979590-37e9b47eb705?w=400&h=300&fit=crop",
+    image: khatuShyamTour,
     featured: false,
     category: "Temple Tours"
   },
@@ -297,7 +305,7 @@ export const allTours: Tour[] = [
     duration: "1 day",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=400&h=300&fit=crop",
+    image: karniMataTemple,
     featured: false,
     category: "Temple Tours"
   },
@@ -328,7 +336,7 @@ export const allTours: Tour[] = [
     duration: "4 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1477595415964-778f43a29cc4?w=400&h=300&fit=crop",
+    image: jaisalmairTour,
     featured: false,
     category: "Rajasthan Tours"
   },
@@ -368,7 +376,7 @@ export const allTours: Tour[] = [
     duration: "8 days",
     rating: "4.8/5",
     reviews: "2.6k",
-    image: "https://images.unsplash.com/photo-1626714100274-dee32048118a?w=400&h=300&fit=crop",
+    image: spitiValleyTour,
     featured: false,
     category: "North India Tours"
   },
