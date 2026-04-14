@@ -9,6 +9,8 @@ import kiaImg from "../assets/kia.png";
 import crystaImg from "../assets/crysta.png";
 import tempoImg from "../assets/tempo.png";
 
+const WHATSAPP_NUMBER = "919785560707";
+
 interface TaxiOption {
   id: number;
   name: string;
@@ -181,8 +183,37 @@ const TaxiPage = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
   const [selectedTaxi, setSelectedTaxi] = useState<TaxiOption | null>(null);
+  const [sidebarForm, setSidebarForm] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    date: "",
+    vehicleType: "",
+    passengers: "",
+    message: "",
+  });
+
+  const [modalForm, setModalForm] = useState({
+    name: "",
+    mobile: "",
+    date: "",
+    time: "",
+    pickupAddress: "",
+  });
 
   const routeInfo = route ? routeData[route] : null;
+
+  const handleSidebarSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const routeText = routeInfo
+      ? `${routeInfo.from} → ${routeInfo.to}`
+      : "General Enquiry";
+    const message = `🚕 *New Taxi Enquiry*\n\n👤 *Name:* ${sidebarForm.name}\n📧 *Email:* ${sidebarForm.email}\n📞 *Mobile:* ${sidebarForm.mobile}\n📅 *Travel Date:* ${sidebarForm.date}\n🚗 *Vehicle Type:* ${sidebarForm.vehicleType || "Not specified"}\n👥 *Passengers:* ${sidebarForm.passengers || "Not specified"}\n🛣️ *Route:* ${routeText}\n💬 *Message:* ${sidebarForm.message || "No message"}`;
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+      "_blank",
+    );
+  };
 
   // Show general outstation taxi page when no specific route
   if (!route) {
@@ -773,12 +804,16 @@ const TaxiPage = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-4">
                 Enquire Now!
               </h3>
-              <form className="space-y-4">
+              <form onSubmit={handleSidebarSubmit} className="space-y-4">
                 <div>
                   <input
                     type="text"
                     placeholder="Name *"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    value={sidebarForm.name}
+                    onChange={(e) =>
+                      setSidebarForm({ ...sidebarForm, name: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -787,6 +822,10 @@ const TaxiPage = () => {
                     type="email"
                     placeholder="Email *"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    value={sidebarForm.email}
+                    onChange={(e) =>
+                      setSidebarForm({ ...sidebarForm, email: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -795,18 +834,36 @@ const TaxiPage = () => {
                     type="tel"
                     placeholder="Mobile Number *"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    value={sidebarForm.mobile}
+                    onChange={(e) =>
+                      setSidebarForm({ ...sidebarForm, mobile: e.target.value })
+                    }
                     required
                   />
                 </div>
                 <div>
                   <input
                     type="date"
+                    placeholder="dd/mm/yyyy"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    value={sidebarForm.date}
+                    onChange={(e) =>
+                      setSidebarForm({ ...sidebarForm, date: e.target.value })
+                    }
                     required
                   />
                 </div>
                 <div>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                  <select
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    value={sidebarForm.vehicleType}
+                    onChange={(e) =>
+                      setSidebarForm({
+                        ...sidebarForm,
+                        vehicleType: e.target.value,
+                      })
+                    }
+                  >
                     <option value="">Select Vehicle Type</option>
                     <option value="sedan">Sedan</option>
                     <option value="suv">SUV</option>
@@ -818,6 +875,13 @@ const TaxiPage = () => {
                     type="number"
                     placeholder="No. of Passengers"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    value={sidebarForm.passengers}
+                    onChange={(e) =>
+                      setSidebarForm({
+                        ...sidebarForm,
+                        passengers: e.target.value,
+                      })
+                    }
                   />
                 </div>
                 <div>
@@ -825,6 +889,13 @@ const TaxiPage = () => {
                     placeholder="Message"
                     rows={3}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    value={sidebarForm.message}
+                    onChange={(e) =>
+                      setSidebarForm({
+                        ...sidebarForm,
+                        message: e.target.value,
+                      })
+                    }
                   ></textarea>
                 </div>
                 <button
