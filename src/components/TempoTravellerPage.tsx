@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom'
 
+import tempoImg20 from "../assets/20-seater.png";
+import tempoImg26 from "../assets/26-seater.png";
+import tempoImg from "../assets/tempo.png";
+
 interface TempoTraveller {
   id: number
   name: string
@@ -21,7 +25,7 @@ const tempoTravellers: TempoTraveller[] = [
     driverCharges: "₹300 INR (Per Day)",
     charges: "₹24 per KM Onwards",
     facilities: ["AC", "Pushback Seats", "LED Lights", "Charging Points", "First Aid Kit", "Music System"],
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500&h=300&fit=crop",
+    image: tempoImg,
     popular: false
   },
   {
@@ -32,7 +36,7 @@ const tempoTravellers: TempoTraveller[] = [
     driverCharges: "₹300 INR (Per Day)",
     charges: "₹24 per KM Onwards",
     facilities: ["AC", "Pushback Seats", "LED Lights", "Charging Points", "First Aid Kit", "Music System", "Curtains"],
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=500&h=300&fit=crop",
+    image: tempoImg,
     popular: true
   },
   {
@@ -54,7 +58,7 @@ const tempoTravellers: TempoTraveller[] = [
     driverCharges: "₹300 INR (Per Day)",
     charges: "₹28 per KM Onwards",
     facilities: ["AC", "Pushback Seats", "LED Lights", "Charging Points", "First Aid Kit", "Music System", "Curtains", "Large Luggage Space", "LCD Screen"],
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop",
+    image: tempoImg20,
     popular: false
   },
   {
@@ -65,7 +69,7 @@ const tempoTravellers: TempoTraveller[] = [
     driverCharges: "₹400 INR (Per Day)",
     charges: "₹32 per KM Onwards",
     facilities: ["AC", "Pushback Seats", "LED Lights", "Charging Points", "First Aid Kit", "Music System", "Curtains", "Extra Large Luggage Space", "LCD Screen", "Mic System"],
-    image: "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=500&h=300&fit=crop",
+    image: tempoImg26,
     popular: false
   }
 ]

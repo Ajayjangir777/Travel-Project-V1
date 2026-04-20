@@ -47,8 +47,7 @@ const ContactUs = () => {
               {
                 icon: '📍',
                 title: 'Our Office',
-                info: 'Jaipur, Rajasthan, India',
-                subInfo: 'Near Railway Station'
+                info: 'Plot no 31, Shree Ram Nagar, Chokhi Dhani Goner Mod, Jaipur, Rajasthan',
               },
               {
                 icon: '📞',
@@ -79,7 +78,7 @@ const ContactUs = () => {
                 ) : (
                   <>
                     <p className="text-gray-600">{item.info}</p>
-                    {item.subInfo && <p className="text-gray-500 text-sm">{item.subInfo}</p>}
+                    {/* {item.subInfo && <p className="text-gray-500 text-sm">{item.subInfo}</p>} */}
                   </>
                 )}
               </div>

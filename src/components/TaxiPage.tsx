@@ -193,22 +193,26 @@ const TaxiPage = () => {
     message: "",
   });
 
-  const [modalForm, setModalForm] = useState({
-    name: "",
-    mobile: "",
-    date: "",
-    time: "",
-    pickupAddress: "",
-  });
-
   const routeInfo = route ? routeData[route] : null;
 
   const handleSidebarSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const routeText = routeInfo
-      ? `${routeInfo.from} → ${routeInfo.to}`
+      ? `${routeInfo.from} to ${routeInfo.to}`
       : "General Enquiry";
-    const message = `🚕 *New Taxi Enquiry*\n\n👤 *Name:* ${sidebarForm.name}\n📧 *Email:* ${sidebarForm.email}\n📞 *Mobile:* ${sidebarForm.mobile}\n📅 *Travel Date:* ${sidebarForm.date}\n🚗 *Vehicle Type:* ${sidebarForm.vehicleType || "Not specified"}\n👥 *Passengers:* ${sidebarForm.passengers || "Not specified"}\n🛣️ *Route:* ${routeText}\n💬 *Message:* ${sidebarForm.message || "No message"}`;
+    const message = `*New Taxi Enquiry*
+
+*Name:* ${sidebarForm.name}
+*Email:* ${sidebarForm.email}
+*Mobile:* ${sidebarForm.mobile}
+*Travel Date:* ${sidebarForm.date}
+*Vehicle Type:* ${sidebarForm.vehicleType || "Not specified"}
+*Passengers:* ${sidebarForm.passengers || "Not specified"}
+*Route:* ${routeText}
+*Message:* ${sidebarForm.message || "No message"}
+
+_Sent from Shree Shyam Travel Website_`;
+
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
       "_blank",
@@ -842,6 +846,9 @@ const TaxiPage = () => {
                   />
                 </div>
                 <div>
+                  <label className="block text-sm font-medium text-gray-500 mb-1">
+                    Travel Date *
+                  </label>
                   <input
                     type="date"
                     placeholder="dd/mm/yyyy"

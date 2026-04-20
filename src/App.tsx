@@ -6,7 +6,7 @@ import Services from './components/Services'
 import TourSection from './components/TourSection'
 import BestSelling from './components/BestSelling'
 import Testimonials from './components/Testimonials'
-import Partners from './components/Partners'
+// import Partners from './components/Partners'
 import Footer from './components/Footer'
 import TaxiPage from './components/TaxiPage'
 import ToursPage from './components/ToursPage'
@@ -55,7 +55,7 @@ const HomePage = () => {
       <BestSelling />
       {/* <BlogSection /> */}
       <Testimonials />
-      <Partners />
+      {/* <Partners /> */}
     </>
   )
 }
@@ -92,7 +92,7 @@ function App() {
 
 const rajasthanTours = [
   {
-    id: 1,
+    id: 3,
     title: "3 Nights 4 Days Rajasthan Tour Package",
     duration: "4 days",
     rating: "4.8/5",
@@ -101,7 +101,7 @@ const rajasthanTours = [
     featured: false
   },
   {
-    id: 2,
+    id: 11,
     title: "Jaipur And Ranthambore Safari Tour",
     duration: "5 days",
     rating: "4.8/5",
@@ -110,8 +110,8 @@ const rajasthanTours = [
     featured: false
   },
   {
-    id: 3,
-    title: "Historical Rajasthan Tour 13 Days",
+    id: 4,
+    title: "Historical Rajasthan Tour 8 Days",
     duration: "13 days",
     rating: "4.8/5",
     reviews: "2.6k",
@@ -119,7 +119,7 @@ const rajasthanTours = [
     featured: true
   },
   {
-    id: 4,
+    id: 1,
     title: "Rajasthan Cultural Tour Package 11 Days",
     duration: "11 days",
     rating: "4.8/5",
@@ -128,7 +128,7 @@ const rajasthanTours = [
     featured: true
   },
   {
-    id: 5,
+    id: 2,
     title: "Rajasthan Desert Tour Package 7 Days",
     duration: "7 days",
     rating: "4.8/5",
@@ -149,7 +149,7 @@ const rajasthanTours = [
 
 const goldenTriangleTours = [
   {
-    id: 1,
+    id: 10,
     title: "Golden Triangle Tour with Varanasi",
     duration: "7 days",
     rating: "4.8/5",
@@ -158,7 +158,7 @@ const goldenTriangleTours = [
     featured: false
   },
   {
-    id: 2,
+    id: 9,
     title: "Golden Triangle Tour With Khajuraho",
     duration: "9 days",
     rating: "4.8/5",
@@ -167,7 +167,7 @@ const goldenTriangleTours = [
     featured: false
   },
   {
-    id: 3,
+    id: 5,
     title: "Golden Triangle Tour With Pushkar",
     duration: "9 days",
     rating: "4.8/5",
@@ -176,7 +176,7 @@ const goldenTriangleTours = [
     featured: true
   },
   {
-    id: 4,
+    id: 6,
     title: "Golden Triangle Tour with Ranthambore",
     duration: "8 days",
     rating: "4.8/5",
@@ -188,7 +188,7 @@ const goldenTriangleTours = [
 
 const jaipurTours = [
   {
-    id: 1,
+    id: 17,
     title: "Jaipur 1 Day Tour Package",
     duration: "1 day",
     rating: "4.8/5",
@@ -197,7 +197,7 @@ const jaipurTours = [
     featured: false
   },
   {
-    id: 2,
+    id: 18,
     title: "Jaipur Tour Package for 2 Days",
     duration: "2 days",
     rating: "4.8/5",
@@ -206,7 +206,7 @@ const jaipurTours = [
     featured: false
   },
   {
-    id: 3,
+    id: 16,
     title: "4 Days Jaipur Tour Package From Delhi",
     duration: "4 days",
     rating: "4.8/5",
@@ -215,7 +215,7 @@ const jaipurTours = [
     featured: false
   },
   {
-    id: 4,
+    id: 15,
     title: "Jaipur to Ajmer Pushkar Tour",
     duration: "1 day",
     rating: "4.8/5",
