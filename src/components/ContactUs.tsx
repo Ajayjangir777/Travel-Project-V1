@@ -64,15 +64,15 @@ const ContactUs = () => {
               {
                 icon: '✉️',
                 title: 'Email Address',
-                info: 'info@shreeshyamtravels.com',
-                link: 'mailto:info@shreeshyamtravels.com'
+                info: 'shreeshyamtravelsjaipur8@gmail.com',
+                link: 'shreeshyamtravelsjaipur8@gmail.com'
               }
             ].map((item, idx) => (
               <div key={idx} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="font-bold text-gray-800 mb-2">{item.title}</h3>
                 {item.link ? (
-                  <a href={item.link} className="text-primary hover:underline block">
+                  <a href={item.link} className="text-primary hover:underline block break-all">
                     {item.info}
                   </a>
                 ) : (

@@ -116,7 +116,7 @@ const PrivacyPolicy = () => {
                 <p className="text-gray-700 mb-2"><strong>Shree Shyam Tour and Travels</strong></p>
                 <p className="text-gray-600 mb-1">📍 Jaipur, Rajasthan, India</p>
                 <p className="text-gray-600 mb-1">📞 <a href="tel:+919785560707" className="text-primary hover:underline">+91 97855 60707</a></p>
-                <p className="text-gray-600">✉️ <a href="mailto:info@shreeshyamtravels.com" className="text-primary hover:underline">info@shreeshyamtravels.com</a></p>
+                <p className="text-gray-600">✉️ <a href="mailto:shreeshyamtravelsjaipur8@gmail.com" className="text-primary hover:underline">shreeshyamtravelsjaipur8@gmail.com</a></p>
               </div>
 
               <div className="border-t border-gray-200 pt-6 mt-8">

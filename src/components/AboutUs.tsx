@@ -173,7 +173,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Team */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">
             Meet Our Team
@@ -200,7 +200,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-16 bg-primary text-white">
