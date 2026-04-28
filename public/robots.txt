@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shree-shyam-travel-v1.netlify.app/sitemap.xml
